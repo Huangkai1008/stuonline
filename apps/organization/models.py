@@ -23,7 +23,7 @@ class CourseOrg(models.Model):
     name = models.CharField(max_length=50, verbose_name="机构名称")
     desc = models.TextField(verbose_name="机构描述")
     click_num = models.IntegerField(default=0, verbose_name="点击数")
-    fav_nums =  models.IntegerField(default=0, verbose_name="收藏数")
+    fav_nums = models.IntegerField(default=0, verbose_name="收藏数")
     image = models.ImageField(upload_to="org/%Y/%m", verbose_name="封面图片", max_length=100)
     address = models.CharField(max_length=150, verbose_name="机构地址")
     city = models.ForeignKey(CityDict, verbose_name="所在城市")
