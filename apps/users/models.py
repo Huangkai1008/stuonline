@@ -15,7 +15,8 @@ class UserProfile(AbstractUser):
     # 生日
     birthday = models.DateField(verbose_name="生日", null=True, blank=True)
     # 性别
-    gender = models.CharField(choices=(("male", "男"), ("female", "女")), default="female", max_length=5)
+    gender = models.CharField(choices=(("male", "男"), ("female", "女")),
+                              default="female", max_length=7)
     # 地址
     address = models.CharField(max_length=100, default="")
     # 手机号
