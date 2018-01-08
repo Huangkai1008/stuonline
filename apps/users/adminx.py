@@ -1,3 +1,4 @@
+# coding:utf8
 import xadmin
 from xadmin import views
 from .models import EmailVerifyRecord, Banner

@@ -1,3 +1,4 @@
+# coding:utf8
 """
 Django settings for stuonline project.
 
@@ -133,4 +134,15 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+   'django.contrib.auth.context_processors.auth',
+   'django.core.context_processors.auth',
+   'django.core.context_processors.debug',
+   'django.core.context_processors.media',
+   'django.core.context_processors.static',
+   'django.core.context_processors.tz',
+   'django.contrib.messages.context_processors.messages',
+   'learn_models.context_processors.test',
 )
